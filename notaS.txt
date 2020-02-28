@@ -112,7 +112,7 @@ $ ng new my-app --routing     // Add routing
 
 $ ng new my-app7 --routing --prefix sicemal --style scss
 
-Try
+Try, test the app
 
 $ npm start 
  
@@ -122,6 +122,33 @@ $ ng serve --help
 
 $ ng serve -o
 
+
+Configurating the Angular CLI
+-----------------------------
+
+Setting the Angular CLI's configuration
+Use ng config 
+Indicate the json path
+The --global (or -g) flag sets your global angular.json file
+
+$ ng config schematics.@schematics/angular :component.styleext scss
+
+Linting 
+-------
+
+$ ng lint my-app --help  // Show the help for linting a project
+
+$ ng lint my-app --format stylish // Lint and format the output
+
+$ ng lint my-app --fix // Lint and attempt to fix all problems
+
+TODO: Try
+
+$ ng lint my-app7
+
+$ ng lint my-app7 --format stylish
+
+$ ng lint my-app7 --fix
 
 
 
