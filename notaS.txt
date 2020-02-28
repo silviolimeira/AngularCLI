@@ -36,8 +36,17 @@ Angular CLI - Angular CLI Instalation
 Generating and Exploring a New app and skip npm install
 $ ng new ngtest --skip-install
 
-Angular Extensions for VS Code
+Install the Angular Essentials Extension package
+http://jpapa.me/angularessentials
+
 angular essentials
+
+Refer to the Angular CLI websites
+- https://cli.angular.io 
+- https://angular.io 
+- https://github.com/angular/angular-cli 
+
+
 
 
 
