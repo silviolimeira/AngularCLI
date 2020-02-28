@@ -46,6 +46,19 @@ Refer to the Angular CLI websites
 - https://angular.io 
 - https://github.com/angular/angular-cli 
 
+Generating a New Application
+$ ng new my-app  // Generate a new in /my-app
+
+$ ng new my-ap --dry-run  // Don't write the files, but report them
+
+$ ng new my-app --skip-install // Generate without running npm install
+
+Getting help
+Add the --help flag
+Reports the many options and their defaults
+
+$ ng new --help
+
 
 
 
