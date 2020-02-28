@@ -59,6 +59,71 @@ Reports the many options and their defaults
 
 $ ng new --help
 
+Generating And Customizing a New App 
+====================================
+
+$ ng new my-app --dry-run  
+$ ng new my-app -d 
+
+$ ng new my-app --help
+
+$ ng new my-app --skip-install
+
+Generating a New Angular Application
+Angular CLI JSON File 
+
+$ ng new my-app2 --prefix acme --skip-install
+Todo: Verify the angular.json for the "prefix": "acme",
+
+and the app/app.component the selector at decorator @Compoent
+  selector: 'acme-root',
+
+Skip Tests
+$ ng new my-app3 --skip-tests --prefix acme --skip-install
+
+TODO: Verify different flags
+$ ng new --help
+
+Add type style flag example:
+$ ng new my-app4 --skip-tests --prefix acme --skip-install --style scss
+
+Add routing flag example:
+$ ng new my-app5 --routing --skip-tests --prefix acme --skip-install --style scss
+
+Using the short flags example:
+$ ng new --help
+
+$ ng new my-app6 -dstS --skip-install --routing --style scss
+
+$ ng new my-app6 -stS --skip-install --routing --style scss
+
+Common App Generation flags
+
+Many flags can be combined 
+Ideal for settings that should exist throughout the app
+Some flags change the configuration in angular.json
+
+Tip
+
+$ ng new my-app --routing     // Add routing
+                --prefix ma   // Set your prefix
+                --style scss  // Define your styles
+                --dry-run     // Verify the file names (util to verify command)
+
+$ ng new my-app7 --routing --prefix sicemal --style scss
+
+Try
+
+$ npm start 
+ 
+and
+
+$ ng serve --help
+
+$ ng serve -o
+
+
+
 
 
 
