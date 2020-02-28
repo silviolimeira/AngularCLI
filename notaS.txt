@@ -33,9 +33,11 @@ $ git clone https://github.com/johnpapa/angular-event-view-cli
 Angular CLI Setup and Verification
 Angular CLI - Angular CLI Instalation
 
-Generating and Exploring a New app
-
+Generating and Exploring a New app and skip npm install
 $ ng new ngtest --skip-install
+
+Angular Extensions for VS Code
+angular essentials
 
 
 
