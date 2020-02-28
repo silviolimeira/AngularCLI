@@ -1,0 +1,41 @@
+
+Test Driving the Angular CLI
+
+Installing the Angular CLI
+$ npm install -g @angular/cli
+
+Verifying Your Installation
+$ ng version
+
+Verify one package without dependencies
+$ npm list -g @angular/cli --depth=0
+
+$ npm new my-dream-app
+
+$ ng serve
+
+$ ng doc component
+
+$ ng --help
+
+$ ng lint 
+
+$ ng test 
+
+$ ng e2e 
+
+$ ng build  // put dist to default folder
+
+$ ng serve --prod
+
+$ git clone https://github.com/johnpapa/angular-event-view-cli
+
+Angular CLI Setup and Verification
+Angular CLI - Angular CLI Instalation
+
+
+
+
+
+
+
