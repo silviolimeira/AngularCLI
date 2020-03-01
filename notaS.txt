@@ -242,6 +242,30 @@ $ ng g s sales-data
 
 
 
+Generating Classes, Interfaces and Enums
+========================================
+
+$ mkdir models
+
+Generate class
+$ ng generate class models/customer -d
+$ mg g cl ...
+
+Generate Interfaces
+$ ng generate interface models/person -d
+$ ng g i ...
+
+Generate Enums
+$ ng generate enums/gender -d
+$ ng g e ...
+
+
+
+
+
+
+
+
 
 
 
