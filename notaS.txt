@@ -260,6 +260,18 @@ $ ng generate enums/gender -d
 $ ng g e ...
 
 
+Generating Pipes
+================
+
+$ ng generate pipe shared/init-caps -d 
+$ ng g p shared/init-caps ...
+
+$ ng g p shared/init-caps -m app.module -d 
+
+
+
+
+
 
 
 
