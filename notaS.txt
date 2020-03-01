@@ -209,6 +209,15 @@ $ ng generate class customer-model  --> customer-model.ts
                --prefix my        // Prefix the component with my-
 
 
+Generating Components 
+=====================
+
+$ ng new angular-hello
+
+$ ng serve -o
+
+$ ng gc customer -d
+
 
 
 
