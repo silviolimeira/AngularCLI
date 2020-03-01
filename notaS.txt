@@ -269,6 +269,29 @@ $ ng g p shared/init-caps ...
 $ ng g p shared/init-caps -m app.module -d 
 
 
+Generating NgModules
+====================
+
+$ ng generate module login -m app.module -d
+$ ng g m login -m app.module 
+
+
+
+Generating Route Features: The NgModule Blueprint with Routing 
+==============================================================
+
+NgModules and Routing
+Generate a new NgModule with ng g module <name> <options>
+Define a module and a separate rouring module with --routing
+
+$ ng g module admin // Generate admin.module.ts
+
+$ ng g m sales --routing // sales.module.ts & sales-routing.module.ts
+
+
+
+
+
 
 
 
