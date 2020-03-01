@@ -151,6 +151,69 @@ $ ng lint my-app7 --format stylish
 $ ng lint my-app7 --fix
 
 
+Generating Code from Blueprints
+-------------------------------
+Compmplents Blueprints and Options 
+
+The generate command will generate code from a Blueprint
+Syntax: ng generate <blueprint> <options>
+Use the --dry-run option to practice
+
+
+$ ng generate component customer    --> customer.component.ts 
+
+$ ng generate service customer-data --> customer-data.ts 
+
+$ ng generate class customer-model  --> customer-model.ts
+
+
+  Aliases as Shortcuts
+  --------------------
+
+  $ ng generate component customer
+
+  $ ng g c customer
+
+
+
+  Common Component Blueprint Options
+  ----------------------------------
+
+  Options                 Alias   Description
+  --flat                          Should a folder be created?
+  --inline-template       -t      Will the template be in the .ts file?
+  --inline-style          -s      Will the style be in the .ts file?
+  --spec                          Generate a spec?
+  --view-encapsulation    -v      View encapsulation strategy
+  --change-detection      -c      Change detection strategy
+  --dry-run               -d      Report the files, don't write them
+
+  Common Ways to Generate Components
+  ==================================
+
+  $ ng generate component pet 
+
+  $ ng generate component pet --inline-template --inlite-style
+
+  $ ng g c pet
+
+  $ ng g pet -t -s 
+
+
+  Common Used Commands
+  ====================
+
+  $ ng g c pet --flat             // Don't create a pet folder
+               --inline-template  // Put the template in the .ts file
+               --inline-style     // Put styles in the .ts file
+               --prefix my        // Prefix the component with my-
+
+
+
+
+
+
+
 
 
 
