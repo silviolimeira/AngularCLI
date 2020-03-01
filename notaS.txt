@@ -216,7 +216,30 @@ $ ng new angular-hello
 
 $ ng serve -o
 
-$ ng gc customer -d
+$ ng g c customer -d
+
+$ ng g c orders --view-encapsulation Emulated -d 
+
+$ ng g c orders -v Emulated -c OnPush
+
+
+
+Generating Directives
+=====================
+
+$ ng g d search-box -d
+
+$ ng g d search-box2 --flat false -d  // generate directive with respective folder
+                                      // -d dry-run - clear the flag to efective creating
+
+
+Generating Services
+===================
+
+$ ng g service sales-data -d 
+
+$ ng g s sales-data
+
 
 
 
