@@ -290,8 +290,25 @@ $ ng g m sales --routing // sales.module.ts & sales-routing.module.ts
 
 
 
+Generating a New Routing App
+============================
 
+$ ng new angular-routing --routing
 
+$ ng serve -o 
+
+$ ng g c dashboard
+$ ng g c customer
+
+snippet
+nav>ul>li*2>a[[routerLink]]
+result:
+  <nav>
+    <ul>
+      <li><a href="" [routerLink]="['/dashboard']">Dashboard</a></li>
+      <li><a href="" [routerLink]="['/customer']">Customer</a></li>
+    </ul>
+  </nav>
 
 
 
