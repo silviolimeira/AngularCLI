@@ -335,6 +335,51 @@ $ ng new sales --routing // app.module.ts & app-routing.module.ts
 
 
 
+Building and Serving
+====================
+
+Building Angular
+----------------
+
+$ ng build  // ng build <options>
+
+Development Builds
+
+Ideal for Development
+
+Output to /dist/[your app] folder, by default (see angular.json)
+
+
+Exploring the Build Bundles
+---------------------------
+
+File          Description
+
+runtime.js    WebPack runtime
+main.js       App code
+polyfill.js   Platform polyfills (for different browsers)
+styles.s      Styles
+vendor.js     Angular and other vendor files
+
+
+Exploring the Source in the Output
+----------------------------------
+
+$ npm install webpack-bundle-analyser --save-dev 
+
+$ ng build -stats-json // https://github.com/webpack-contrib/webpack-bundle-analyser
+
+$ npx webpack-bundle-analyser dist/my-app/stats.json
+
+
+$ npm install source-map-explorer --save-dev
+
+$ ng build    // https://github.com/danvk/source-map-explorer/
+
+$ npx source-map-explorer dist/my-app/main.js
+
+
+
 
 
 
