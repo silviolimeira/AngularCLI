@@ -454,7 +454,30 @@ Options         Alias   Description
 
 
 
+Adding New Capabilities
+-----------------------
 
+$ ng add @angular/pwa
+
+$ ng add @angular/material
+
+$ ng add @angular/elements
+
+$ ng add @ng-bootstrap/schematics
+
+ng add package
+Adds new Capabilities
+Downloads dependencies
+Update a project configuration
+Scaffold new Capabilities
+
+
+Adding Angular Material
+-----------------------
+
+$ ng g @angular/material:material-nav --name nav
+
+https://app.pluralsight.com/course-player?clipId=9dde2801-8e2c-4d8a-94a6-32f9e5c703e1
 
 
 
