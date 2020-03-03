@@ -439,6 +439,24 @@ $ npm run stats  // tool for visualization
 
 
 
+Common ng serve Options
+-----------------------
+
+All build options are available on serve,
+plus the following...
+
+Options         Alias   Description
+--open          -o      Opens in the default browser
+--port                  Port to listen to when serving
+--live-reload           Reload when changes occur
+--ssl                   Serve using https
+--proxy-config          Proxy configuration file 
+
+
+
+
+
+
 
 
 
