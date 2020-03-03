@@ -311,6 +311,31 @@ result:
   </nav>
 
 
+Adding Routing Features with the Angular CLI
+============================================
+
+$ ng g new sales --routing  // New app, module, & routing module
+
+$ ng g m admin --routing  // New module plus a routing module
+
+$ ng g c admin/users  // New component in the admin module
+
+
+Generating a Guard
+==================
+
+Generating an App with Routing Features
+
+Generate a new NgModule with ng new <app-name> <options>
+
+Define a separate routing module for the new app with --routing
+
+
+$ ng new sales --routing // app.module.ts & app-routing.module.ts
+
+
+
+
 
 
 
