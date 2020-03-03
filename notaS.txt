@@ -379,8 +379,63 @@ $ ng build    // https://github.com/danvk/source-map-explorer/
 $ npx source-map-explorer dist/my-app/main.js
 
 
+Exploring a Development Build and its Bundles
+---------------------------------------------
+
+ng build
+
+vefify dist folder in the angular.json config
+Output to /dist/[your app] folder, by default (see angular.json)
 
 
+$ npm install webpack-bundle-analyser --save-dev
+
+$ ng build --stats-json
+
+add script stats to package.json
+
+"scripts": {
+  "stats": "npx webpack-bundle-analyser dist/angular-routing/stats.json"
+}
+
+$ npm run stats
+
+
+Comparing Dev and Prod Build Targets
+------------------------------------
+
+                ng build                                  ng build --prod
+
+Environment     environment.ts                            environment.prod.ts
+Cache-busting   only images referenced in class           all build files
+Source maps     generated                                 not generated
+Extracted CSS   global CSS output to .js                  yes, to css files(s)
+Uglification    no                                        yes
+Tree-Shaking    no                                        yes
+AOT             no                                        yes
+Bundling        yes                                       yes
+
+
+Common ng build Options
+-----------------------
+
+Options       Alias   Description
+--source-map          Generate a source map
+--aot                 Ahead of Time compilation 
+--watch       -w      Watch and rebuild
+--prod        -e      Shortcut for prod env and target
+
+
+Production Builds
+-----------------
+
+$ ng build --aot --stats-json
+
+$ npm run stats
+
+$ ng b --prod --stats-json
+
+$ npm run stats  // tool for visualization
 
 
 
